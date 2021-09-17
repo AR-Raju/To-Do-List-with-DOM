@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-item {
+  width: 100%;
+  display: grid;
+  margin: 3rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 100px;
+  row-gap: 20px;
+}
+.item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.delete {
+  background-color: red;
+  margin: 2px;
+  padding: 1px 2px;
+  border-radius: 2px;
+  color: aliceblue;
+  border-color: red;
+}
+label {
+  font-style: italic;
+  font-size: medium;
+  font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+  .grid-item {
+    width: 90%;
+  }
+}
